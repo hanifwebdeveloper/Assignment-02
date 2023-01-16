@@ -342,8 +342,9 @@ body {
     background-color: #FFF4E7;
     border-radius: 8px;
     width: 1200px;
-    height: 100px;
-    padding-top: 40px;
+    height: 80px;
+    border-radius: 8px;
+    padding: 40px;
 }
 
 .footer p {
@@ -351,4 +352,141 @@ body {
     font-weight: 400;
     color: #424242;
     text-align: center;
+}
+
+/*---- responsive styles------
+------------------Media Query-----
+Mobile Device------------  */
+@media screen and (max-width:576px) {
+    .header {
+        width: 100%;
+        height: 1100px;
+        background-color: rgba(255, 144, 14, 0.1);
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .nav-container ul li a {
+        text-align: left;
+        font-weight: 400;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .nav-container ul li {
+        margin: 0;
+    }
+
+    .modern-arhitecter img {
+        width: 95%;
+        height: 400px;
+    }
+
+    /* ------main------- */
+    .main .our-feature {
+        padding: 10px 30px;
+    }
+
+    .img-feature {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .imgage {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: -170px;
+    }
+
+    /* ---feature love--- */
+    .content-feature {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .feature-love {
+        padding: 40px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .feature-love-img img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .feature-love-content .card {
+        margin: 20px 10px;
+        background: #FFFFFF;
+        box-shadow: 2px 4px 30px rgba(0, 0, 0, 0.09);
+        padding: 25px;
+        border-radius: 8px;
+    }
+
+    .feature-love-content .card:hover {
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+
+    .feature-love-img .btn-primary-btn {
+        margin-top: -50px;
+        margin-left: 250px;
+    }
+
+    .some-facts {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .some-facts-icon {
+        margin-left: 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    /* ----our sponsor---- */
+    .our-sponsor {
+        text-align: center;
+        margin: 60px 10px;
+    }
+
+    .sponsor-icon {
+        margin-left: 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+
+    .icons img {
+        width: 120px;
+        height: 50px;
+    }
+
+    /*---footer ----------- */
+    .footer-part {
+        padding: 20px 40px;
+
+    }
+
+    .footer {
+        background-color: #FFF4E7;
+        border-radius: 8px;
+        width: 500px;
+        height: 80px;
+
+    }
+
+    .footer p {
+        font-size: 20px;
+        font-weight: 400;
+        color: #424242;
+        text-align: center;
+    }
 }
